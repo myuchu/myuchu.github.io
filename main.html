@@ -34,8 +34,9 @@
     
     document.getElementById('profile_pic').src = profiles[counter].jpg;
 
-    function update_pic(link){
-      document.getElementById('profile_pic').src = link;
+    function update_pic(counter){
+      
+      document.getElementById('profile_pic').src = profiles[counter].jpg;
     }
     
     function swipe(direction){
@@ -46,8 +47,8 @@
         first_name: profile.first_name,
         hometown: profile.hometown
       });
-      update_pic(profile.jpg);
       counter = counter + 1;
+      update_pic(counter);
       console.log(counter);
     }
     
