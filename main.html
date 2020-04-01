@@ -39,7 +39,7 @@
     }
     
     function swipe(direction){
-      var profile = profiles[counter++];
+      var profile = profiles[counter];
       analytics.track('Swiped ' + direction, {
         name: profile.name,
         age: profile.age,
@@ -47,6 +47,7 @@
         hometown: profile.hometown
       });
       update_pic(profile.jpg);
+      counter = counter + 1;
       console.log(counter);
     }
     
