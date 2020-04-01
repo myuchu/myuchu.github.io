@@ -36,18 +36,23 @@
       document.getElementById('profile_pic').src = link;
     }
     
-    function swipe_left(){
-      analytics.track('Swiped Left', {
-        var profile = profiles[counter++];
-        update_pic(profile.jpg)
-        
+    function swipe(direction){
+      var profile = profiles[counter++];
+      analytics.track('Swiped ' + direction, {
+        name: profile.name,
+        age: profile.age,
+        first_name: profile.first_name,
+        hometown: profile.hometown
       });
+      update_pic(profile.jpg);
+    }
+    
+    function swipe_left(){
+      swipe('Left)
     }
     
     function swipe_right(){
-      analytics.track('Swiped Right', {
-        var profile = profiles[counter++];
-      });
+      swipe('Right)
     }
     
     
