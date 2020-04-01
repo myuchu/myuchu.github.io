@@ -8,9 +8,15 @@
       }}();
       
       
-      var identify = analytics.identify({
-          email: 'needsumluv@datingapp.com'
+     function identify() = {
+        document.getElementById('email').value;
+        window.location.href = 'https://myuchu.github.io/main.html'
+        analytics.identify({
+          email: document.getElementById('email').value;
         });
+      
+      };
+      
     </script>
   </head>
   
