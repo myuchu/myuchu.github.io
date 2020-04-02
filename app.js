@@ -22,7 +22,7 @@
         last_name: "Lion",
         hometown: "Kenya",
         occupation: "Safari King",
-        jpg:"https://lh3.googleusercontent.com/proxy/6Gj26PZi12ASskZqQwLNV_MclckNKzXKqCN-Vm0-OGYmTNKDZ9bnCWlCKtIISZpSJSemsDS5bF9cG98_kLfHvF1dF-SNaL8rWLyb"
+        jpg:"https://cg1.cgsociety.org/uploads/images/medium/silport-the-lion-king-mufasa-1-48b6a401-ous5.jpg"
       },
       {
         age: 70,
