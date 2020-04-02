@@ -1,6 +1,22 @@
     var counter = 0;
     var profiles = [
       {
+        age: 29,
+        first_name: "Blake",
+        last_name: "Smith",
+        hometown: "Nashville",
+        occupation: "Professional Hiker",
+        jpg: "https://onncg8dr7k-flywheel.netdna-ssl.com/wp-content/uploads/2017/10/AndrewSkurka.YosemiteNationalPark-1_FIX.jpg"
+      },
+        {
+        age: 25,
+        first_name: "Melissa",
+        last_name: "Anderson",
+        hometown: "Austin",
+        occupation: "Product Designer",
+        jpg: "https://static.parade.com/wp-content/uploads/2018/09/happy-dog-owner-field-ftr.jpg"
+      },
+      {
         age: 21,
         first_name: "Shawn",
         last_name: "Mendes",
