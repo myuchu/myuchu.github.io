@@ -9,12 +9,28 @@
         jpg: "https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale"
       },
       {
+        age: 37,
+        first_name: "Ali",
+        last_name: "Wong",
+        hometown: "San Francisco",
+        occupation: "Ego Crusher",
+        jpg: "https://marriedwiki.com/uploads/bio/2017/02/03/thumb/ali-wong-260-260.jpeg"
+      },
+      {
         age: 20,
         first_name: "Mufasa",
         last_name: "Lion",
         hometown: "Kenya",
         occupation: "Safari King",
         jpg:"https://lh3.googleusercontent.com/proxy/6Gj26PZi12ASskZqQwLNV_MclckNKzXKqCN-Vm0-OGYmTNKDZ9bnCWlCKtIISZpSJSemsDS5bF9cG98_kLfHvF1dF-SNaL8rWLyb"
+      },
+      {
+        age: 70,
+        first_name: "Elizabeth",
+        last_name: "Warren",
+        hometown: "Oklahoma City",
+        occupation: "Liberal Banker",
+        jpg:"https://pbs.twimg.com/profile_images/1215406626049413121/LiVKh64l_400x400.jpg"
       },
       {
         age: 79,
@@ -38,6 +54,8 @@
       document.getElementById('profile_pic').src = profile.jpg;
       document.getElementById('age').innerHTML = "Age: " + profile.age;
       document.getElementById('hometown').innerHTML = "Hometown: " + profile.hometown;
+      document.getElementById('occupation').innerHTML = "Occupation: " + profile.occupation;
+     
       
     }
     
