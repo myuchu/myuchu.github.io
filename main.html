@@ -9,11 +9,11 @@
 </script>
 </head>
 
-<body style="background-color: light-grey" onload="initialize()">
-
+<body style="background-color: light-grey">
+  <iframe id="myFrame"></iframe>
   <div id="profile">
     <div>
-      <img id="profile_pic" width="500px" src="https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale">
+      <img id="profile_pic" width="500px" src="">
     </div>
     <div style="text-align:center; border:2px; border-radius:20px; border-color: grey">
       <p id="name"></p>
@@ -98,7 +98,7 @@
       swipe('Right')
     }
     
-    document.getElementById("profile").onload = function(){
+    document.getElementById("myFrame").onload = function(){
       update_profile(counter)
       console.log("Profile loaded with " + counter)
     
