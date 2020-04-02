@@ -48,8 +48,6 @@
       document.getElementById('age').innerHTML = "Age: " + profile.age;
       document.getElementById('hometown').innerHTML = "Hometown: " + profile.hometown;
       
-      
-      
     }
     
     function swipe(direction){
@@ -63,7 +61,6 @@
       });
       counter = counter + 1;
       update_profile(counter);
-      console.log(counter);
     }
     
     function swipe_left(){
@@ -73,6 +70,7 @@
     function swipe_right(){
       swipe('Right')
     }
+    
     update_profile(counter);
     
     
@@ -84,7 +82,7 @@
   <iframe id="myFrame"></iframe>
   <div id="profile">
     <div>
-      <img id="profile_pic" width="500px" src="">
+      <img id="profile_pic" width="500px" src="a">
     </div>
     <div style="text-align:center; border:2px; border-radius:20px; border-color: grey">
       <p id="name"></p>
