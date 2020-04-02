@@ -1,10 +1,10 @@
- var counter = 0;
+    var counter = 0;
     var profiles = [
       {
-        age: 22,
+        age: 21,
         first_name: "Shawn",
         last_name: "Mendes",
-        hometown: "NYC",
+        hometown: "Ontario",
         occupation: "Player...of the Guitar",
         jpg: "https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale"
       },
