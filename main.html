@@ -44,9 +44,13 @@
     
     document.getElementById('profile_pic').src = profiles[counter].jpg;
 
-    function update_pic(counter){
+    function update_profile(counter){
+      var profile = profiles[counter]
+      document.getElementById('profile_pic').src = profile.jpg;
+      document.getElementById('name').value = profile.first_name + " " + profile.last_name;
+      document.getElementById('age').value = profile.age;
       
-      document.getElementById('profile_pic').src = profiles[counter].jpg;
+      
     }
     
     function swipe(direction){
@@ -59,7 +63,7 @@
         hometown: profile.hometown
       });
       counter = counter + 1;
-      update_pic(counter);
+      update_profile(counter);
       console.log(counter);
     }
     
@@ -75,6 +79,11 @@
   </script>
   <div>
     <img id="profile_pic" width="500px" src="https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale">
+  </div>
+  <div style="text-align:center">
+    <p id="name" value="Shawn Mendes"></p>
+    <p id="age" value="22"></p>
+    
   </div>
   <div>
     <button align="left" style="border-radius: 1%" onclick="swipe_left()"><img width="30px" src="https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png"></button>
