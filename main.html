@@ -6,80 +6,14 @@
   analytics.load("IlW8SXUUCRsZTGLiMlAKLeLuAOrRHeKT");
   analytics.page();
   }}();
-   
-      
-    var counter = 0;
-    var profiles = [
-      {
-        age: 22,
-        first_name: "Shawn",
-        last_name: "Mendes",
-        hometown: "NYC",
-        occupation: "Player...of the Guitar",
-        jpg: "https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale"
-      },
-      {
-        age: 20,
-        first_name: "Mufasa",
-        last_name: "Lion",
-        hometown: "Kenya",
-        occupation: "Safari King",
-        jpg:"https://lh3.googleusercontent.com/proxy/6Gj26PZi12ASskZqQwLNV_MclckNKzXKqCN-Vm0-OGYmTNKDZ9bnCWlCKtIISZpSJSemsDS5bF9cG98_kLfHvF1dF-SNaL8rWLyb"
-      },
-      {
-        age: 79,
-        first_name: "Anthony",
-        last_name: "Fauci",
-        hometown: "NYC",
-        occupation: "COVID Curer",
-        jpg: "https://www.americanthinker.com/images/bucket/2020-03/219986.png"
-      }
-    ]
-    
- 
-    
-    //document.getElementById('profile_pic').src = profiles[counter].jpg;
-    //document.getElementById('name').innerHTML = profile.first_name + " " + profile.last_name;
-
-    function update_profile(counter){
-      var profile = profiles[counter]
-      
-      document.getElementById('name').innerHTML = "Name: " + profile.first_name + " " + profile.last_name;
-      document.getElementById('profile_pic').src = profile.jpg;
-      document.getElementById('age').innerHTML = "Age: " + profile.age;
-      document.getElementById('hometown').innerHTML = "Hometown: " + profile.hometown;
-      
-    }
-    
-    function swipe(direction){
-      var profile = profiles[counter];
-      analytics.track('Swiped ' + direction, {
-        name: profile.name,
-        age: profile.age,
-        first_name: profile.first_name,
-        occupation: profile.occupation,
-        hometown: profile.hometown
-      });
-      counter = counter + 1;
-      update_profile(counter);
-    }
-    
-    function swipe_left(){
-      swipe('Left')
-    }
-    
-    function swipe_right(){
-      swipe('Right')
-    }
-    
-    update_profile(counter);
-    
+  
     
  
 </script>
 </head>
 
 <body style="background-color: light-grey">
+  <script type="text/javascript" src="app.js"></script>
   <iframe id="myFrame"></iframe>
   <div id="profile">
     <div>
