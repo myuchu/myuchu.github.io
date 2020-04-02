@@ -78,9 +78,9 @@
     function swipe(direction){
       var profile = profiles[counter];
       analytics.track('Swiped ' + direction, {
-        name: profile.name,
-        age: profile.age,
         first_name: profile.first_name,
+        last_name: profile.last_name,
+        age: profile.age,
         occupation: profile.occupation,
         hometown: profile.hometown
       });
