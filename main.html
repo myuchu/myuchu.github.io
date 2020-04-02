@@ -40,18 +40,21 @@
         jpg: "https://www.americanthinker.com/images/bucket/2020-03/219986.png"
       }
     ]
-    console.log(profiles[counter].jpg);
     
-    document.getElementById('profile_pic').src = profiles[counter].jpg;
+ 
+    
+    //document.getElementById('profile_pic').src = profiles[counter].jpg;
+    //document.getElementById('name').innerHTML = profile.first_name + " " + profile.last_name;
 
     function update_profile(counter){
       var profile = profiles[counter]
       document.getElementById('profile_pic').src = profile.jpg;
-      document.getElementById('name').value = profile.first_name + " " + profile.last_name;
-      document.getElementById('age').value = profile.age;
+      document.getElementById('name').innerHTML = profile.first_name + " " + profile.last_name;
+      document.getElementById('age').innerHTML = profile.age;
       
       
     }
+    update_profile(counter);
     
     function swipe(direction){
       var profile = profiles[counter];
@@ -81,8 +84,8 @@
     <img id="profile_pic" width="500px" src="https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale">
   </div>
   <div style="text-align:center">
-    <p id="name" value="Shawn Mendes"></p>
-    <p id="age" value="22"></p>
+    <p id="name">Shawn Mendes</p>
+    <p id="age">22</p>
     
   </div>
   <div>
