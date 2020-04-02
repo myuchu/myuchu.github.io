@@ -49,8 +49,8 @@
     function update_profile(counter){
       var profile = profiles[counter]
       document.getElementById('profile_pic').src = profile.jpg;
-      document.getElementById('name').innerHTML = profile.first_name + " " + profile.last_name;
-      document.getElementById('age').innerHTML = profile.age;
+      document.getElementById('name').innerHTML = "Name: " + profile.first_name + " " + profile.last_name;
+      document.getElementById('age').innerHTML = "Age: " + profile.age;
       
       
     }
@@ -83,9 +83,10 @@
   <div>
     <img id="profile_pic" width="500px" src="https://specials-images.forbesimg.com/imageserve/1170573705/960x0.jpg?fit=scale">
   </div>
-  <div style="text-align:center">
-    <p id="name">Shawn Mendes</p>
-    <p id="age">22</p>
+  <div style="text-align:center; border:2px; border-radius:20px; border-color: grey">
+    <p id="name"></p>
+    <p id="age"></p>
+    <p id="hometown"></p>
     
   </div>
   <div>
