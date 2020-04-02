@@ -55,7 +55,7 @@
         hometown: "NYC",
         occupation: "COVID Curer",
         jpg: "https://www.americanthinker.com/images/bucket/2020-03/219986.png"
-      }
+      },
     ]
     
  
@@ -84,7 +84,7 @@
         occupation: profile.occupation,
         hometown: profile.hometown
       });
-      counter = counter + 1;
+      counter = counter + 1;  
       update_profile(counter);
     }
     
